@@ -966,7 +966,7 @@ func (f *File) drawPlotAreaCatAx(formatSet *formatChart) []*cAxs {
 				Max:         max,
 				Min:         min,
 			},
-			Delete: &attrValBool{Val: boolPtr(false)},
+			Delete: &attrValBool{Val: boolPtr(true)},
 			AxPos:  &attrValString{Val: stringPtr(catAxPos[formatSet.XAxis.ReverseOrder])},
 			NumFmt: &cNumFmt{
 				FormatCode:   "General",
@@ -1020,7 +1020,7 @@ func (f *File) drawPlotAreaValAx(formatSet *formatChart) []*cAxs {
 				Max:         max,
 				Min:         min,
 			},
-			Delete: &attrValBool{Val: boolPtr(false)},
+			Delete: &attrValBool{Val: boolPtr(true)},
 			AxPos:  &attrValString{Val: stringPtr(valAxPos[formatSet.YAxis.ReverseOrder])},
 			NumFmt: &cNumFmt{
 				FormatCode:   chartValAxNumFmtFormatCode[formatSet.Type],
